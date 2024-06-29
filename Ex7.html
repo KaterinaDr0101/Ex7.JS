@@ -1,0 +1,22 @@
+<html>
+<head>
+  <title>Массивы школьных предметов</title>
+  <script language="JavaScript">
+    function splitSubjects() {
+      var subjects = new Array("Математика", "Физика", "Химия", "Биология", "История", "Литература", "Русский язык", "Иностранный язык", "География", "Обществознание");
+
+      var exactSciences = subjects.slice(0, 4); //копирую от 0 до 3
+
+      var humanities = subjects.slice(4); //копирую до конца
+
+      document.write("Предметы точных наук: " + exactSciences + "<br>");
+      document.write("Предметы гуманитарных наук: " + humanities);
+    }
+  </script>
+</head>
+<body>
+  <script language="JavaScript">
+    splitSubjects();
+  </script>
+</body>
+</html>
